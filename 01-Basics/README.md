@@ -1,45 +1,67 @@
 # 📚 SQL Basics
 
-This folder contains my SQL fundamentals studies.
+Welcome to the first module of my SQL learning journey.
 
-The goal is to build a strong foundation by learning one concept at a time through practical examples and exercises.
-
----
-
-## 📖 Topics
-
-- ✅ SELECT
-- ✅ FROM
-- ✅ WHERE
-- ⏳ ORDER BY
-- ⏳ GROUP BY
-- ⏳ HAVING
-- ⏳ DISTINCT
-- ⏳ LIMIT
+This module covers the fundamental concepts of SQL through explanations, practical examples, and exercises.
 
 ---
 
-## 📂 Files
+## 🎯 Learning Objectives
+
+By the end of this module, you should be able to:
+
+- Retrieve data from tables
+- Filter records using different conditions
+- Organize query results
+- Understand the logical flow of a SQL query
+
+---
+
+## 📖 Topics Covered
+
+| Status | Topic |
+|:------:|-------|
+| ✅ | SELECT |
+| ✅ | FROM |
+| ✅ | WHERE |
+| ⏳ | ORDER BY |
+| ⏳ | GROUP BY |
+| ⏳ | HAVING |
+| ⏳ | DISTINCT |
+| ⏳ | LIMIT |
+
+---
+
+## 📂 Repository Structure
 
 | File | Description |
 |------|-------------|
-| `01-select.sql` | Selecting columns and basic queries |
+| `01-select.sql` | Introduction to the SELECT statement |
 | `02-from.sql` | Retrieving data from tables |
-| `03-where.sql` | Filtering data with WHERE |
-| `04-order-by.sql` | Sorting query results |
-| `05-group-by.sql` | Grouping records |
-| `06-having.sql` | Filtering grouped results |
-| `07-distinct.sql` | Returning unique values |
-| `08-limit.sql` | Limiting returned rows |
+| `03-where.sql` | Filtering records using WHERE |
+| `04-checkpoint-01.sql` | Practice exercises covering SELECT, FROM and WHERE |
 
 ---
 
-## 🎯 Learning Goal
+## 💻 Practice
 
-Master the fundamentals of SQL before moving on to:
+Each concept includes practical examples.
+
+At the end of the module, a checkpoint file contains exercises that combine all previously learned topics.
+
+---
+
+## 🚀 Next Module
+
+After completing SQL Basics, the next topics will be:
 
 - JOINs
-- CTEs
+- Aggregate Functions
+- GROUP BY
+- HAVING
 - Window Functions
-- Query Optimization
-- Real Business Cases
+- CTEs
+
+---
+
+> 💡 Learning SQL is not about memorizing syntax. It's about learning how to solve problems using data.
