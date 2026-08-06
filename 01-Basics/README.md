@@ -24,7 +24,7 @@ By the end of this module, you should be able to:
 | ✅ | SELECT |
 | ✅ | FROM |
 | ✅ | WHERE |
-| ⏳ | ORDER BY |
+| ✅ | ORDER BY |
 | ⏳ | GROUP BY |
 | ⏳ | HAVING |
 | ⏳ | DISTINCT |
