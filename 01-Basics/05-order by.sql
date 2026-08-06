@@ -9,19 +9,25 @@ ascending or descending order.
 
 Concepts covered:
 - ORDER BY
-- ASC
 - DESC
 =========================================================
 */
 
--- Retrieve transactions from July 2025 ordered by the
--- creation date, from the most recent to the oldest.
+-- Retrieve customers ordered by their points from the
+-- highest to the lowest.
 
-SELECT *
-FROM transacoes
-WHERE DtCriacao >= '2025-07-01'
-  AND DtCriacao < '2025-08-01'
-ORDER BY DtCriacao DESC;
+SELECT
+    IdCliente,
+    QtdePontos,
+    CASE
+        WHEN QtdePontos BETWEEN 0 AND 500 THEN 'Estagiario'
+        WHEN QtdePontos BETWEEN 501 AND 1000 THEN 'Junior'
+        WHEN QtdePontos BETWEEN 1001 AND 5000 THEN 'Pleno'
+        WHEN QtdePontos BETWEEN 5001 AND 10000 THEN 'Senior'
+        ELSE 'Especialista'
+    END AS Nivel
+FROM clientes
+ORDER BY QtdePontos DESC;
 
 /*
 ---------------------------------------------------------
@@ -30,14 +36,11 @@ Explanation
 The ORDER BY clause sorts the records returned by the
 query.
 
-By default, SQL sorts data in ascending order (ASC).
+Using DESC sorts the values in descending order, meaning
+the customers with the highest number of points appear
+first.
 
-Using DESC sorts the records from the highest value to
-the lowest.
-
-Example:
-
-ORDER BY DtCriacao DESC
-
-This returns the newest transactions first.
+In this example, the CASE expression is only used to
+classify customers into different levels, while ORDER BY
+is responsible for organizing the final result.
 */
