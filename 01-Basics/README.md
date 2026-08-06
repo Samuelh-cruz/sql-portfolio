@@ -27,7 +27,7 @@ By the end of this module, you should be able to:
 | ✅ | ORDER BY |
 | ⏳ | GROUP BY |
 | ⏳ | HAVING |
-| ⏳ | DISTINCT |
+| ✅ | DISTINCT |
 | ⏳ | LIMIT |
 
 ---
